@@ -1,0 +1,8 @@
+@theme {
+	--spacing-xs: 2rem; /* 32px */
+	--spacing-sm: 3rem; /* 48px */
+	--spacing-md: 5rem; /* 80px */
+	--spacing-lg: 8rem; /* 128px */
+	--spacing-xl: 10rem; /* 160px */
+	--spacing-xxl: 12rem; /* 192px */
+}

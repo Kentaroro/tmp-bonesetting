@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@import "./color.css";
+@import "./breakpoint.css";
+@import "./font.css";
+@import "./space.css";
+@import "./text.css";
+
+@import "./base.css";
+@import "./components.css";
+@import "./utilities.css";

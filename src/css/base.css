@@ -1,0 +1,11 @@
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+	body {
+		@apply font-noto-sans;
+	}
+	figure {
+		@apply mb-0!;
+	}
+}
