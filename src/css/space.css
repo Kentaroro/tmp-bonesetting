@@ -4,5 +4,7 @@
 	--spacing-md: 5rem; /* 80px */
 	--spacing-lg: 8rem; /* 128px */
 	--spacing-xl: 10rem; /* 160px */
-	--spacing-xxl: 12rem; /* 192px */
+	--spacing-2xl: 12rem; /* 192px */
+	--spacing-3xl: 16rem; /* 256px */
+	--spacing-4xl: 20rem; /* 320px */
 }

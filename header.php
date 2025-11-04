@@ -17,5 +17,7 @@
         </header>
     <?php else : ?>
         <header class="w-full">
+            <?php get_template_part('parts/top/fv'); ?>
+            <?php get_template_part('parts/public/header-nav'); ?>
         </header>
     <?php endif; ?>
