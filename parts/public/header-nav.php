@@ -1,4 +1,4 @@
-<nav id="header-nav">
+<nav id="header-nav" class="max-w-7xl mx-auto tb:px-5 px-3">
     <ul class="flex flex-wrap justify-center bg-white">
         <?php
         $menu_name = 'header';
