@@ -1,4 +1,4 @@
-<div id="fv" class="swiper top-slider w-full flex-1">
+<div id="fv" class="swiper top-slider w-full h-svh">
     <div class="swiper-wrapper">
         <?php
         if (have_rows('top_slider_items', 'option')) :
@@ -6,14 +6,12 @@
         ?>
                 <div class="swiper-slide">
                     <?php
-                    $file = get_sub_field('file')['name'];
-                    if ($file) {
-                        $extension = pathinfo($file, PATHINFO_EXTENSION);
-                    }
+                    $file_name = get_sub_field('file')['filename'];
+                    $extension = pathinfo($file_name, PATHINFO_EXTENSION);
                     if ($extension == 'mp4' || $extension == 'webm' || $extension == 'mov') : ?>
                         <video
-                            src="<?php echo $file['url']; ?>"
-                            alt="<?php echo $file['alt']; ?>"
+                            src="<?php echo get_sub_field('file')['url']; ?>"
+                            alt="<?php echo get_sub_field('file')['alt']; ?>"
                             class="w-full h-full object-center"
                             autoplay
                             muted

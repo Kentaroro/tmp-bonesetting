@@ -2,6 +2,10 @@
 get_header();
 ?>
 <main>
+    <!-- fv -->
+    <section id="fv">
+        <?php get_template_part('parts/top/fv'); ?>
+    </section>
     <!-- about -->
     <section id="about" class="-mt-10">
         <?php get_template_part('parts/top/about'); ?>

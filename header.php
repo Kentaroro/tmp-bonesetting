@@ -10,14 +10,6 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <?php if (is_front_page()) : ?>
-        <header class="w-full h-svh flex flex-col">
-            <?php get_template_part('parts/top/fv'); ?>
-            <?php get_template_part('parts/public/header-nav'); ?>
-        </header>
-    <?php else : ?>
-        <header class="w-full">
-            <?php get_template_part('parts/top/fv'); ?>
-            <?php get_template_part('parts/public/header-nav'); ?>
-        </header>
-    <?php endif; ?>
+    <header class="fixed top-0 left-0 right-0 z-50">
+        <?php get_template_part('parts/public/header-nav'); ?>
+    </header>

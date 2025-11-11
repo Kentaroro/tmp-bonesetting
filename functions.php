@@ -37,4 +37,8 @@ require_once get_template_directory() . '/functions/utility.php';               
 require_once get_template_directory() . '/functions/setup/acf-settings.php';       // ACF設定
 
 // TOPページコンポーネント
-require_once get_template_directory() . '/functions/components/top/layout.php';
+require_once get_template_directory() . '/functions/components/top/layout.php'; //about・cashのレイアウト
+
+// publicコンポーネント
+require_once get_template_directory() . '/functions/components/public/site-info-logo.php'; // サイト情報ロゴ
+require_once get_template_directory() . '/functions/components/public/site-info-map.php'; // サイト情報マップ
