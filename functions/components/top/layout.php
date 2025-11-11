@@ -37,7 +37,7 @@ if (!function_exists('render_top_about_check_content')) :
                 </h2>
             <?php endif; ?>
 
-            <div class="<?= esc_attr($bg_class); ?> w-full md:pt-2xl md:pb-xl pt-lg pb-md">
+            <div class="<?= esc_attr($bg_class); ?> w-full tb:pt-2xl md:pb-xl pt-2xl pb-md">
                 <div class="max-w-[1920px] mx-auto flex <?= esc_attr($flex_class); ?> items-center gap-8">
                     <div class="flex items-center <?= esc_attr($img_class); ?> flex-1/2">
                         <?php if (!empty($img['url'])): ?>
@@ -49,11 +49,11 @@ if (!function_exists('render_top_about_check_content')) :
 
                     <div class="flex items-center text-body md:px-5 px-3 flex-1/2 <?= esc_attr($text_class); ?>">
                         <div class="flex flex-col items-start md:gap-8 gap-6">
-                            <?php if ($head): ?><h3 class="text-2xl"><?= $head; ?></h3><?php endif; ?>
-                            <?php if ($desc): ?><p class="max-w-[810px] w-full"><?= $desc; ?></p><?php endif; ?>
+                            <?php if ($head): ?><h3 class="tb:text-2xl text-xl"><?= $head; ?></h3><?php endif; ?>
+                            <?php if ($desc): ?><p class="max-w-[810px] w-full tb:text-base text-sm"><?= $desc; ?></p><?php endif; ?>
                             <?php if ($link_text || $link_url): ?>
                                 <a href="<?= esc_url($link_url); ?>"
-                                    class="text-primary bg-white border-primary border rounded-sm px-3 py-3 flex pc:justify-between justify-center items-center max-pc:self-center transition ease-in-out duration-300 hover:bg-primary hover:text-white">
+                                    class="text-primary text-base tb:text-base bg-white border-primary border rounded-sm px-3 py-3 flex pc:justify-between justify-center items-center max-pc:self-center transition ease-in-out duration-300 hover:bg-primary hover:text-white">
                                     <?= $link_text; ?>
                                 </a>
                             <?php endif; ?>

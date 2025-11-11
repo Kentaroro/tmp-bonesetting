@@ -9,16 +9,17 @@ function render_site_info_logo()
     $tel = $com_items['tel'] ?? '';
     $open = $com_items['open'] ?? '';
     $close = $com_items['close'] ?? '';
+    $close_desc = $com_items['close_desc'] ?? '';
 ?>
-    <div class="flex flex-col items-center justify-center gap-3">
+    <div class="flex flex-col items-center justify-center gap-3 text-body">
         <figure class="max-w-[85px]">
             <?php the_custom_logo(); ?>
         </figure>
         <h2 class="flex flex-col items-center justify-center gap-3 font-potta-one">
-            <span class="text-4xl"><?php bloginfo('name'); ?></span>
-            <span class="text-sm"><?php bloginfo('description'); ?></span>
+            <span class="tb:text-4xl text-3xl"><?php bloginfo('name'); ?></span>
+            <span class="tb:text-sm text-xs"><?php bloginfo('description'); ?></span>
         </h2>
-        <ul class="flex flex-row justify-around items-center gap-2 font-potta-one">
+        <ul class="flex flex-row flex-wrap tb:justify-around justify-center items-center gap-2 font-potta-one">
             <?php
             $tags = [
                 '#神田',
@@ -29,7 +30,7 @@ function render_site_info_logo()
             ];
             foreach ($tags as $tag) :
             ?>
-                <li class="text-sm text-white bg-body py-1 px-2 rounded"><?php echo $tag; ?></li>
+                <li class="tb:text-sm text-xs text-white bg-body py-1 px-2 rounded"><?php echo $tag; ?></li>
             <?php endforeach; ?>
         </ul>
         <div class="flex justify-center items-center gap-2">
@@ -39,15 +40,18 @@ function render_site_info_logo()
             <a href="tel:<?php echo $tel; ?>" class="text-[28px]/none font-bold cursor-default"><?php echo $tel; ?></a>
         </div>
         <ul class="flex flex-col items-center justify-center gap-2">
-            <li class="text-base font-medium"><?php echo $open; ?></li>
-            <li class="text-base font-medium"><?php echo $close; ?></li>
+            <li class="tb:text-base text-xs"><?php echo $open; ?></li>
+            <li class="tb:text-base text-xs"><?php echo $close; ?></li>
+            <?php if ($close_desc) : ?>
+                <li class="tb:text-sm text-xs"><?php echo $close_desc; ?></li>
+            <?php endif; ?>
         </ul>
-        <address class="flex flex-row justify-start items-center gap-2 text-sm not-italic font-medium">
+        <address class="flex tb:flex-row flex-col justify-start items-center gap-2 text-sm not-italic">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 19.923L9 17.823L5.04225 19.3537C4.78592 19.4487 4.54808 19.4209 4.32875 19.2702C4.10958 19.1196 4 18.9077 4 18.6345V6.40375C4 6.22558 4.04325 6.06283 4.12975 5.9155C4.21625 5.768 4.34225 5.66541 4.50775 5.60775L9 4.077L15 6.177L18.9578 4.64624C19.2141 4.55124 19.4519 4.56949 19.6712 4.70099C19.8904 4.83233 20 5.02816 20 5.28849V17.673C20 17.864 19.9471 18.0301 19.8413 18.1712C19.7356 18.3122 19.5937 18.4116 19.4155 18.4692L15 19.923ZM14.5 18.7037V7.00375L9.5 5.25775V16.9577L14.5 18.7037ZM15.5 18.7037L19 17.55V5.7L15.5 7.00375V18.7037ZM5 18.3L8.5 16.9577V5.25775L5 6.45V18.3Z" fill="#686053" />
             </svg>
-            <span>〒<?php echo $post_num; ?></span>
-            <span><?php echo $address; ?></span>
+            <span class="tb:text-base text-xs">〒<?php echo $post_num; ?></span>
+            <span class="tb:text-base text-xs"><?php echo $address; ?></span>
         </address>
     </div>
 <?php

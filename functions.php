@@ -42,3 +42,4 @@ require_once get_template_directory() . '/functions/components/top/layout.php'; 
 // publicコンポーネント
 require_once get_template_directory() . '/functions/components/public/site-info-logo.php'; // サイト情報ロゴ
 require_once get_template_directory() . '/functions/components/public/site-info-map.php'; // サイト情報マップ
+require_once get_template_directory() . '/functions/components/public/site-info-schedule.php'; // サイト情報診療日スケジュール

@@ -11,7 +11,7 @@ get_header();
         <?php get_template_part('parts/top/about'); ?>
     </section>
     <!-- check -->
-    <section id="check" class="-mt-58">
+    <section id="check" class="tb:-mt-58 -mt-43">
         <?php get_template_part('parts/top/check'); ?>
     </section>
     <!-- naviarea -->
