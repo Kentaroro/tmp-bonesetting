@@ -5,7 +5,7 @@
         </figure>
     </a>
 </div>
-<button id="header-nav-sp-btn" class="flex flex-col gap-1.5 absolute top-4.5 right-4 z-51" aria-label="メニューを開く" aria-expanded="false">
+<button id="header-nav-sp-btn" class="pc:hidden flex flex-col gap-1.5 absolute top-4.5 right-4 z-51" aria-label="メニューを開く" aria-expanded="false">
     <span class="w-[24px] h-[2px] bg-body rounded-[5px] rotate-0 line"></span>
     <span class="w-[24px] h-[2px] bg-body rounded-[5px] rotate-0 line"></span>
     <span class="w-[24px] h-[2px] bg-body rounded-[5px] rotate-0 line"></span>
