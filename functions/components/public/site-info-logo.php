@@ -13,7 +13,7 @@ function render_site_info_logo()
 ?>
     <div class="flex flex-col items-center justify-center gap-3 text-body">
         <figure class="max-w-[85px]">
-            <?php the_custom_logo(); ?>
+            <img src="<?php echo site_logo('full'); ?>" alt="<?php bloginfo('name'); ?>">
         </figure>
         <h2 class="flex flex-col items-center justify-center gap-3 font-potta-one">
             <span class="tb:text-4xl text-3xl"><?php bloginfo('name'); ?></span>

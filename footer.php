@@ -11,8 +11,11 @@ $map = $com_items['map'] ?? '';
 $access = $com_items['access'] ?? '';
 ?>
 <footer>
-    <div class="max-w-7xl w-full mx-auto tb:px-5 px-3 py-md grid pc:grid-cols-2 grid-cols-1 gap-8">
+    <div class="max-w-7xl w-full mx-auto tb:px-5 px-3 py-md grid pc:grid-cols-2 grid-cols-1 gap-8 items-end justify-center">
         <?php render_site_info_logo(); ?>
+        <?php render_site_info_schedule(); ?>
+    </div>
+    <div class="w-full">
         <?php render_site_info_map(); ?>
     </div>
     <div class=" bg-beige py-3 text-center">

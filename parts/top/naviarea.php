@@ -18,14 +18,14 @@
                     $desc = $item['desc'];
             ?>
                     <li>
-                        <a href="<?= esc_url($link); ?>" class="group flex flex-col gap-5">
+                        <a href="<?= esc_url($link); ?>" class="group flex flex-col tb:gap-5 gap-3">
                             <figure class="max-w-[312px] w-full overflow-clip rounded-xl">
                                 <img src="<?= esc_url($img_url); ?>" alt="<?= esc_attr($img_alt); ?>" class="w-full h-full object-cover group-hover:scale-110 transition duration-400">
                             </figure>
-                            <h4 class="text-xl text-secondary font-medium">
+                            <h4 class="tb:text-xl text-lg text-secondary font-medium">
                                 <?php echo $title; ?>
                             </h4>
-                            <p class="text-body text-sm">
+                            <p class="text-body tb:text-sm text-xs">
                                 <?php echo $desc; ?>
                             </p>
                         </a>

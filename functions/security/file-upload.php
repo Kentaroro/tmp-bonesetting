@@ -24,6 +24,7 @@ function restrict_file_uploads($file)
         'jpeg',
         'png',
         'gif',
+        'svg',
         'pdf',
         'doc',
         'docx',

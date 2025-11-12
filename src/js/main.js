@@ -1,6 +1,10 @@
 import "../css/index.css";
 import topSlider from "./components/swiper-sliders";
-import gsapAnimation from "./components/gsap-animations";
+import {
+	headerNavAnimation,
+	headerNavMenuAnimation,
+} from "./components/gsap-animations";
 
 topSlider();
-gsapAnimation();
+headerNavAnimation();
+headerNavMenuAnimation();

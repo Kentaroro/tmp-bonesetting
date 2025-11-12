@@ -12,4 +12,5 @@
     <?php wp_body_open(); ?>
     <header class="fixed top-0 left-0 right-0 z-50">
         <?php get_template_part('parts/public/header-nav'); ?>
+        <?php get_template_part('parts/public/header-nav-sp'); ?>
     </header>
